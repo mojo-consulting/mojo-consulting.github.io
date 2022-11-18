@@ -1,0 +1,35 @@
+baseURL = 'https://mojo.consulting/'
+languageCode = 'en-us'
+title = 'MOJO'
+theme = 'blank'
+sectionPagesMenu = "main"
+
+[params]
+  logo_img = 'mojo-vertical-02.svg'
+  title = 'MOJO'
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  title = 'About'
+  url = '/about/'
+  weight = 1
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  title = 'Blog'
+  url = '/blog/'
+  weight = 2
+[[menu.main]]
+  identifier = 'services'
+  name = 'Services'
+  title = 'Services'
+  url = '/services/'
+  weight = 3
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact'
+  title = 'Contact'
+  url = '/contact/'
+  weight = 4
