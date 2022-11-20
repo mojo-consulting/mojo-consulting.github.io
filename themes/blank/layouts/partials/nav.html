@@ -2,11 +2,6 @@
 <label for="menu">*</label>
 
 <nav>
-
-  <!-- <a href="{{ .Site.BaseURL }}">
-    <img src="{{ relURL .Site.Params.logo_img }}">
-  </a> -->
-
 	{{ with .Site.Menus.main }}
 	<ol>
 		{{ range . }}
@@ -16,5 +11,4 @@
 		{{ end }}
 	</ol>
 	{{ end }}
-
 </nav>

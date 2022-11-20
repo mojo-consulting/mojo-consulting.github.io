@@ -5,7 +5,6 @@ theme = 'blank'
 sectionPagesMenu = "main"
 
 [params]
-  logo_img = 'mojo-vertical-02.svg'
   title = 'MOJO'
 
 [menu]

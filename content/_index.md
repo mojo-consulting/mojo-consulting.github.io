@@ -3,7 +3,7 @@ title: Home
 draft: false
 ---
 
-# ![MOJO](mojo-default-02.svg) {#mojo}
+# ![MOJO](mojo-logo.svg) {#mojo}
 
 <!-- # We are **MOJO.** -->
 
