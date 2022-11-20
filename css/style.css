@@ -29,7 +29,7 @@ body {
   position: relative;
 }
 
-button, strong a {
+button {
   background-color: transparent;
   border: 3px double #ed459c;
   color: #ed459c;
@@ -39,12 +39,12 @@ button, strong a {
   font-weight: bold;
   line-height: 1;
   margin: 0 0 1.5em;
-  padding: 1.5em;
+  padding: 1.5em 3em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-button:hover, strong a:hover {
+button:hover {
   background-color: #ed459c;
   color: white;
 }
@@ -75,7 +75,8 @@ footer {
 }
 
 form input, form textarea {
-  width: 20em;
+  width: 100%;
+  max-width: 20em;
 }
 
 form input, form label {
