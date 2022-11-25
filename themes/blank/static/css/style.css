@@ -4,22 +4,6 @@
   dark: #444444
  */
 
-article > ol > li {
-  border-top: 1px dotted #444444;
-  margin-top: -1px;
-  padding: 2em 0;
-}
-
-article > ol > li > h2 {
-  border: none;
-  margin: 0;
-}
-
-article > time {
-  display: block;
-  margin: -2em 0 2em 0;
-}
-
 body {
   color: #444444;
   font-family: serif;
@@ -166,19 +150,33 @@ main {
   position: relative;
 }
 
+main ol > li {
+  border-top: 1px dotted #444444;
+  margin-top: -1px;
+  padding: 2em 0;
+}
+
+main ol > li > h2 {
+  border: none;
+  display: inline;
+  margin: 0;
+}
+
+main ol > li > ul {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 1.5em 0 0 3em;
+}
+
 nav {
   border-right: 3px double #444444;
   bottom: 0;
+  height: 100%;
   font-family: monospace;
   left: 0;
   position: fixed;
   top: 50px;
   z-index: 10;
-}
-
-nav > a {
-  display: block;
-  line-height: 0;
 }
 
 nav > ol {
@@ -224,16 +222,6 @@ ol > li::marker, ul > li::marker {
   font-family: monospace;
 }
 
-ol > li > ul {
-  list-style-position: inside;
-  list-style-type: disc;
-  margin: 1.5em 0 0 3em;
-}
-
-ol > li > ul > li > time::after {
-  content: ' // ';
-}
-
 p {
   margin: 0 0 1.5em;
 }
@@ -254,7 +242,23 @@ strong {
 }
 
 time {
+  display: block;
   font-family: monospace;
+  line-height: 1.5em;
+}
+
+time::before {
+ content: '_ ';
+}
+
+time::after {
+ content: ' _';
+}
+
+
+time + a {
+  display: inline-block;
+  line-height: 3em;
 }
 
 ul {
@@ -272,10 +276,4 @@ ul > li > h2 {
   border-bottom: none;
   display: block;
   margin-bottom: 1em;
-}
-
-ul > li > time {
-  display: inline-block;
-  line-height: 1.5em;
-  margin-right: 0.5em;
 }
