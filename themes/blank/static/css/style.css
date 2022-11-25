@@ -4,6 +4,10 @@
   dark: #444444
  */
 
+article > time {
+  margin-bottom: 1.5em;
+}
+
 body {
   color: #444444;
   font-family: serif;
