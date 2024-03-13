@@ -1,33 +1,68 @@
 /*
   accent: #ed459c
   pale: #f5b9d8
-  dark: #444444
+  dark: #333
+  light: #eee
  */
 
-article > time {
-  margin-bottom: 1.5em;
+html {
+  font-size: 16px;
 }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+/**********/
+
+/* work-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/work-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+/* work-sans-700italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/work-sans-v19-latin-700italic.woff2') format('woff2');
+}
+
+/**********/
+
 body {
-  color: #444444;
-  font-family: serif;
-  font-size: 18px;
-  line-height: 1.5;
+  background-color: #eee;
+  color: #333;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5rem;
   margin: 0;
   position: relative;
 }
 
 button {
-  background-color: transparent;
+  background-color: white;
   border: 3px double #ed459c;
   color: #ed459c;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: monospace;
   font-weight: bold;
   line-height: 1;
-  margin: 0 0 1.5em;
-  padding: 1.5em 3em;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem 3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -41,30 +76,27 @@ em {
   color: #ed459c;
 }
 
-h1#mojo {
-  border: none;
-}
-
-h1 > img {
-  max-width: 8em;
-}
-
 fieldset {
   border: none;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   padding: 0;
 }
 
 footer {
-  font-size: 0.75em;
-  line-height: 2em;
+  font-size: 0.75rem;
+  line-height: 2rem;
   position: absolute;
-  bottom: 2em;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  border-top: 1px solid #333;
+  width: 100%;
+  padding: 0.5em;
 }
 
 form input, form textarea {
   width: 100%;
-  max-width: 20em;
+  max-width: 20rem;
 }
 
 form input, form label {
@@ -73,165 +105,90 @@ form input, form label {
 
 form input, form label, form textarea {
   font-family: monospace;
-  font-size: 1em;
-  line-height: 3em;
+  font-size: 1rem;
+  line-height: 3rem;
 }
 
 form textarea {
-  height: 6em;
+  height: 6rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: monospace;
-  font-weight: 200;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1;
+  /* text-transform: uppercase; */
 }
 
 h1 {
-  border-bottom: 1px dotted #444444;
-  font-size: 2em;
-  margin: 0 0 0.75em;
+  font-size: 4rem;
+  margin: 0 0 2rem;
+}
+
+h1#mojo + h2 {
+  text-align: center;
+}
+
+h1 + time {
+  margin-bottom: 1.5em;
 }
 
 h2 {
   display: inline-block;
-  border-bottom: 1px dotted #444444;
-  font-size: 1.5em;
-  line-height: 2em;
-  margin: 0 0 1em;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0 0 2rem;
 }
 
 h3 {
-  /* font-size: 1.5em; */
   font-weight: bold;
-  /* line-height: 2em; */
-  margin: 0 0 1em;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  line-height: 3em;
-  z-index: 20;
-  width: 100%;
-}
-
-input[type=checkbox]#menu {
-  display: none;
-}
-
-input[type=checkbox]#menu + label {
-  color: #ed459c;
-  border-right: 3px double #444444;
-  height: 1.5em;
-  font-family: monospace;
-  font-size: 2em;
-  left: 0;
-  line-height: 60px;
-  padding-left: 15px;
-  position: fixed;
-  top: 0;
-  transition: width 0.2s;
-  width: 36px;
-  z-index: 30;
-}
-
-input[type=checkbox]#menu:checked + label {
-  width: 186px;
-}
-
-input[type=checkbox]#menu:checked ~ nav ol li a {
-  width: 160px;
-}
-
-input[type=checkbox]#menu:checked ~ main {
-  padding-left: 240px;
+  margin: 0 0 1rem;
 }
 
 main {
-  max-width: 960px;
+  max-width: 36rem;
   margin: 0 auto;
-  padding: 80px 20px 120px 80px;
+  padding: 8rem 1rem;
   position: relative;
 }
 
-main ol > li {
-  border-top: 1px dotted #444444;
-  margin-top: -1px;
-  padding: 2em 0;
-}
-
-main ol > li > h2 {
-  border: none;
-  display: inline;
-  margin: 0;
-}
-
-main ol > li > ul {
-  list-style-position: inside;
-  list-style-type: none;
-  margin: 1.5em 0 0 3em;
-}
-
 nav {
-  border-right: 3px double #444444;
-  bottom: 0;
-  height: 100%;
-  font-family: monospace;
-  left: 0;
   position: fixed;
-  top: 50px;
+  right: 0;
+  top: 0;
   z-index: 10;
+  background-color: #eee;
+  border-bottom: 1px solid #333;
+  width: 100%;
 }
 
-nav > ol {
-  border-top: 1px solid #444444;
-  margin: 0;
-  padding: 0;
-  word-break: break-word;
-  list-style-type: lower-roman;
-  list-style-position: inside;
+nav > ul > li {
+  float: right;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 0.75rem;
 }
 
-nav > ol > li {
-  border-bottom: 1px solid #444444;
-  padding-left: 5px;
+nav > ul > li:first-child {
+  float: left;
 }
 
-nav > ol > li > a {
-  display: block;
-  line-height: 1em;
-  padding: 1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: width 0.2s;
-  width: 10px;
+nav > ul > li:first-child img {
+  width: 0.75rem;
+  vertical-align: middle;
 }
 
-nav > ol > li > a:hover {
-  color: #ed459c;
-  /* text-decoration: underline; */
-}
-
-nav > ol > li::marker {
-  font-size: 0.8em;
-}
-
-ol {
-  list-style-type: lower-roman;
-  list-style-position: inside;
-  padding: 0;
-}
-
-ol > li::marker, ul > li::marker {
-  font-family: monospace;
+nav > ul > li:first-child:hover {
+  background-color: transparent;
 }
 
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 2rem;
 }
 
 p + ul {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.5rem 0;
   list-style-position: inside;
   list-style-type: disc;
 }
@@ -248,36 +205,36 @@ strong {
 time {
   display: block;
   font-family: monospace;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 time::before {
- content: '_ ';
+ content: '/ ';
 }
 
 time::after {
- content: ' _';
+ content: ' /';
 }
 
 
 time + a {
   display: inline-block;
-  line-height: 3em;
+  line-height: 3rem;
 }
 
-ul {
+ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 ul > li {
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 ul > li > h2 {
   border-bottom: none;
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
