@@ -2,7 +2,6 @@ baseURL = 'https://mojo-consulting.github.io'
 languageCode = 'en-us'
 title = 'MOJO'
 theme = 'blank'
-sectionPagesMenu = "main"
 
 [params]
   title = 'MOJO'
