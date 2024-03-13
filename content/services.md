@@ -3,6 +3,8 @@ title: 'Services'
 draft: false
 ---
 
+![Vectors](/vectors.svg)
+
 ## Discover Opportunities
 
 In a constantly evolving business environment, it is crucial to understand the market and its stakeholders. Whether you're planning to enter a new market, launching a new service or expanding your product offering we are here to help you:

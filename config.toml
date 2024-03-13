@@ -9,10 +9,10 @@ sectionPagesMenu = "main"
 
 [menu]
 [[menu.main]]
-  identifier = 'about'
-  name = 'About'
-  title = 'About'
-  url = '/about/'
+  identifier = 'contact'
+  name = 'Contact'
+  title = 'Contact'
+  url = '/contact/'
   weight = 1
 [[menu.main]]
   identifier = 'blog'
@@ -21,14 +21,19 @@ sectionPagesMenu = "main"
   url = '/blog/'
   weight = 2
 [[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  title = 'About'
+  url = '/about/'
+  weight = 3
+[[menu.main]]
   identifier = 'services'
   name = 'Services'
   title = 'Services'
   url = '/services/'
-  weight = 3
-[[menu.main]]
-  identifier = 'contact'
-  name = 'Contact'
-  title = 'Contact'
-  url = '/contact/'
   weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      autoHeadingID = false

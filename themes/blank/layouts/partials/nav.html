@@ -1,14 +1,14 @@
-<input id="menu" role="button" type="checkbox">
-<label for="menu">*</label>
-
 <nav>
 	{{ with .Site.Menus.main }}
-	<ol>
+	<ul>
+		<li>
+		  <a href="/"><img src="/asterix.svg" alt="Home"></a>
+		</li>
 		{{ range . }}
 		<li>
       <a href="{{ .URL | relURL }}">{{ .Name }}</a>
     </li>
 		{{ end }}
-	</ol>
+	</ul>
 	{{ end }}
 </nav>

@@ -3,15 +3,11 @@ title: Home
 draft: false
 ---
 
-# ![MOJO](mojo-logo.svg) {#mojo}
+# ![Logo](/mojo-logo-o.svg) {#mojo}
+## We design, develop, and deliver digital products.
 
-<!-- # We are **MOJO.** -->
+![Topography](/topography.svg)
 
-1. ## We are [a consulting firm](/about).
+Leveraging multi-disciplinary expertise, MOJO excels in merging design, technology, and business strategy to develop innovative products that meet diverse needs and challenge market conventions.
 
-2. ## We write about [product strategy](/blog).
-    {{< blog-list >}}
-
-3. ## We are [for hire](/services).
-
-4. ## Let's [talk](/contact)!
+[Contact us](/contact) today to start building your next great product.

@@ -1,7 +1,9 @@
 ---
-title: 'We Are MOJO'
+title: 'About Us'
 draft: false
 ---
+
+![MOJO](/logos.svg)
 
 ## Background
 

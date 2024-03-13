@@ -9,6 +9,6 @@ We'd love to discuss how to design, develop and deliver your next digital produc
 
 Book a **free strategy workshop** with us today to start generating solutions for your digital product goals. Please fill out the form below to get in touch.
 
-<!-- **[Reserve a session on Calendly](https://calendly.com)** -->
+**[Reserve a session on Calendly](https://calendly.com)** or use the  form below to reach out.
 
 {{< contact-form >}}

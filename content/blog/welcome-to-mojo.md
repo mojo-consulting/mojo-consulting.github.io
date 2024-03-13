@@ -1,8 +1,10 @@
 ---
 title: 'Welcome to MOJO'
-date: 2022-11-11T00:00:00+0000
+date: 2024-03-01T00:00:00+0000
 draft: false
 ---
+
+![MOJO](/logos-02-square.svg)
 
 ## Motivation
 
@@ -10,7 +12,7 @@ As a team with decades of experience designing, building and deploying products 
 
 Our purpose is to help everyone in the product development process excel by introducing fundamental insights, sharing powerful tools and offering top notch services for digital product development.
 
-For more info about our values, background and experience, check out our (about page)[/about].
+For more info about our values, background and experience, check out our [about page](/about).
 
 
 ## Key Concepts

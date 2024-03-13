@@ -1,6 +1,6 @@
 ---
 title: 'Web Design'
-date: 2022-11-18T00:00:00+0000
+date: 2024-03-08T00:00:00+0000
 draft: false
 ---
 
@@ -23,7 +23,7 @@ After some research into different approaches, we chose to use a static site gen
 
 ## Approach
 
-We decided to minimize external dependencies as much as possible. The simplest way to do that was simply to forgo any Javascript libraries and rely on HTML and CSS. This also allows us to avoid the overhead of maintaining additional modules.
+We decided to minimize external dependencies as much as possible. The simplest way to do that was simply to forgo Javascript libraries and rely on HTML and CSS. This also allows us to avoid the overhead of maintaining modules and the risk of linking to third parties.
 
 None of us like being tracked, yet it has become the status quo of the internet. Avoiding cookies can be time consuming and distracting. We decided to not use any tracking code in order to improve the user experience as well as keep our site lean and quick.
 
