@@ -1,18 +1,21 @@
 <form action="https://formsubmit.co/e7040922e762bba85db0b42181dc60da" method="POST">
   <fieldset>
     <label for="name">Name</label>
-    <input id="name" name="name" placeholder="Morgan Jones" type="text" required="required" />
+    <input type="text" id="name" name="name" placeholder="Morgan Jones" required="required" />
   </fieldset>
   <fieldset>
     <label for="email">E-mail address</label>
-    <input id="email" name="email" placeholder="hello@mojo.consulting" type="text" required="required" />
+    <input type="text" id="email" name="email" placeholder="hello@mojo.consulting" required="required" />
   </fieldset>
   <fieldset>
     <label for="message">Message</label>
     <textarea id="message" name="message" required="required"></textarea>
   </fieldset>
   <fieldset>
+    <input type="checkbox" id="consent" name="consent" required="required" />
+    <label for="consent">I agree to the <a href="/privacy">Privacy Policy</a>.</label>
+  </fieldset>
+  <fieldset>
     <button name="submit" type="submit">Send</button>
   </fieldset>
-  <!-- <p>Thank you for your message! we will respond to you shortly.</p> -->
 </form>

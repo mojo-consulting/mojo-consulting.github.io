@@ -29,7 +29,7 @@ html {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/work-sans-v19-latin-regular.woff2') format('woff2');
+  src: url('/fonts/work-sans-v19-latin-regular.woff2') format('woff2');
 }
 
 /* work-sans-700italic - latin */
@@ -38,7 +38,7 @@ html {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 700;
-  src: url('/work-sans-v19-latin-700italic.woff2') format('woff2');
+  src: url('/fonts/work-sans-v19-latin-700italic.woff2') format('woff2');
 }
 
 /**********/
@@ -84,7 +84,7 @@ fieldset {
 
 footer {
   font-size: 0.75rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   position: absolute;
   bottom: 0;
   box-sizing: border-box;
@@ -94,23 +94,28 @@ footer {
   padding: 0.5em;
 }
 
-form input, form textarea {
+form input[type=text], form textarea {
   width: 100%;
   max-width: 20rem;
 }
 
-form input, form label {
+form input[type=text], form label {
   display: block;
 }
 
-form input, form label, form textarea {
-  font-family: monospace;
+form input, form label {
   font-size: 1rem;
   line-height: 3rem;
 }
 
+form input#consent + label {
+  display: inline-block;
+}
+
 form textarea {
+  font-size: 1rem;
   height: 6rem;
+  line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

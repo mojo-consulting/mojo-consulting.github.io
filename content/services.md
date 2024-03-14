@@ -3,7 +3,7 @@ title: 'Services'
 draft: false
 ---
 
-![Vectors](/vectors.svg)
+![Vectors](/images/vectors.svg)
 
 ## Discover Opportunities
 

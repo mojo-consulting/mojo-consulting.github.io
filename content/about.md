@@ -3,7 +3,7 @@ title: 'About Us'
 draft: false
 ---
 
-![MOJO](/logos.svg)
+![MOJO](/images/logos.svg)
 
 ## Background
 
