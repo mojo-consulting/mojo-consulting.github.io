@@ -1,5 +1,5 @@
 ---
-title: 'Web Design'
+title: "Web Design"
 date: 2024-03-08T00:00:00+0000
 draft: false
 ---

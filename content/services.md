@@ -1,5 +1,5 @@
 ---
-title: 'Services'
+title: "Services"
 draft: false
 ---
 
@@ -29,7 +29,47 @@ Great products are forged in the marketplace in a cycle of release and refinemen
 
 - Craft a product roadmap and strategy for long-term impact
 - Design and test critical features to unlock customer value
-- Build and release prototypes for testing and validation
+- Build and release prototypes and MVPs for testing and validation
+
+
+## Capabilities
+
+### Strategy
+- Competitive Analysis
+- Feature Definition
+- Innovation Workshops
+- Market Research
+- Product Lifecycle Management
+- Product Roadmap Development
+- Stakeholder Engagement
+- Strategic Planning
+- Technology Selection
+- Trend Forecasting
+- User Research
+
+### Design
+- Design Research
+- Information Architecture
+- Interactive Design
+- Responsive Web Design
+- User Interfaces
+- User-Centered Design
+- Web Accessibility
+- Wireframing
+
+### Engineering
+- API Development
+- Application Architecture
+- Cloud Infrastructure Management
+- Continuous Integration / Continuous Deployment (CI/CD)
+- Database Management
+- DevOps Practices
+- Desktop App Development
+- Mobile App Development
+- Performance Optimization
+- Server-Side Development
+- Software Testing and Quality Assurance
+- Version Control Systems
 
 
 ## Contact

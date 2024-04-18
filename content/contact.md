@@ -1,5 +1,5 @@
 ---
-title: 'Contact Us'
+title: "Contact Us"
 draft: false
 ---
 
@@ -7,7 +7,7 @@ draft: false
 
 We'd love to discuss how to design, develop and deliver your next digital product.
 
-Book a **free strategy workshop** with us today to start generating solutions for your digital product goals. Please fill out the form below to get in touch.
+Book a *free strategy workshop* with us today to start generating solutions for your digital product goals. [Reserve a session on Calendly](https://calendly.com/mojo-consulting/30min) or use the form below to reach out.
 
 {{< contact-form >}}
 

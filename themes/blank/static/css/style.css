@@ -3,6 +3,7 @@
   pale: #f5b9d8
   dark: #333
   light: #eee
+  mid: #888
  */
 
 html {
@@ -12,6 +13,22 @@ html {
 @media (min-width: 768px) {
   html {
     font-size: 20px;
+  }
+  nav > input, nav > label {
+    display: none;
+  }
+  nav > ul {
+    padding: 0 !important;
+    clear: none !important;
+    display: flex !important;
+    justify-content: end;
+  }
+  nav > ul > li {
+    align-self: flex-end;
+    font-size: 1rem !important;
+  }
+  nav > ul > li > img {
+    display: none;
   }
 }
 
@@ -74,6 +91,8 @@ button:hover {
 
 em {
   color: #ed459c;
+  font-weight: bold;
+  font-style: italic;
 }
 
 fieldset {
@@ -85,13 +104,18 @@ fieldset {
 footer {
   font-size: 0.75rem;
   line-height: 1.5rem;
-  position: absolute;
-  bottom: 0;
   box-sizing: border-box;
-  left: 0;
   border-top: 1px solid #333;
   width: 100%;
-  padding: 0.5em;
+  padding: 1em;
+}
+
+footer ul {
+  margin-bottom: 1em;
+}
+
+footer ul li {
+  margin-bottom: 0;
 }
 
 form input, form label {
@@ -155,12 +179,24 @@ h2 {
 h3 {
   font-weight: bold;
   margin: 0 0 1rem;
+  line-height: 2rem;
+}
+
+hr {
+  border-top: 1px solid #333;
+  border-bottom: none;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+img + em {
+  font-size: 0.75rem;
 }
 
 main {
   max-width: 36rem;
   margin: 0 auto;
-  padding: 8rem 1rem;
+  padding: 8rem 1rem 4rem;
   position: relative;
 }
 
@@ -171,46 +207,69 @@ nav {
   z-index: 10;
   background-color: #eee;
   border-bottom: 1px solid #333;
+  overflow: scroll;
+  max-height: 100%;
   width: 100%;
 }
 
-nav > ul > li {
-  float: right;
-  margin: 0.5em;
-  padding: 0.5em;
-  font-size: 0.75rem;
-}
-
-nav > ul > li:first-child {
+nav > a {
   float: left;
+  padding: 1rem;
+  text-decoration: none;
 }
 
-nav > ul > li:first-child img {
-  width: 0.75rem;
+nav > a > img {
+  height: 1rem;
   vertical-align: middle;
 }
 
-nav > ul > li:first-child:hover {
-  background-color: transparent;
+nav > input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+nav > input, nav > label {
+  float: right;
+}
+
+nav > input {
+  height: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+nav > label {
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+
+nav > ul {
+  clear: both;
+  display: none;
+  padding: 2rem 0;
+}
+
+nav > ul > li {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav > ul > li > img {
+  height: 3rem;
+  vertical-align: middle;
 }
 
 p {
   margin: 0 0 2rem;
 }
 
-p + ul {
+p + ul, h3 + ul {
   margin: 0 0 1.5rem 0;
   list-style-position: inside;
   list-style-type: disc;
 }
 
-p + ul > li {
+p + ul > li, h3 + ul > li {
   margin: 0;
-}
-
-strong {
-  color: #ed459c;
-  font-weight: bold;
 }
 
 time {
@@ -248,4 +307,27 @@ ul > li > h2 {
   border-bottom: none;
   display: block;
   margin-bottom: 1rem;
+}
+
+ul.tags li {
+  color: #888;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul.tags li:first-child {
+  padding-left: 0;
+}
+
+ul.tags li::before {
+  content: '* ';
+  padding: 0 0.5rem;
+}
+
+ul.tags li:first-child::before {
+  content: '';
+  padding: 0;
 }

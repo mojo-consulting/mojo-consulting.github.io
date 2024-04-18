@@ -1,6 +1,22 @@
 <footer>
-	&copy; {{ now.Year }}
+	{{ with .Site.Menus.main }}
+	<ul>
+		<li>
+		  <a href="/">Home</a>
+		</li>
+		{{ range . }}
+		<li>
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    </li>
+		{{ end }}
+		<li>
+			<a href="privacy">Privacy</a>
+		</li>
+	</ul>
+	{{ end }}
+
+	&copy; {{ now.Year }}s
 	MOJO Consulting.
-	This website respects your privacy: no tracking, no cookies, no JavaScript.
-	See the <a href="/privacy">Privacy Policy</a> for details.
+	This website respects your privacy: no tracking, no cookies.
+
 </footer>

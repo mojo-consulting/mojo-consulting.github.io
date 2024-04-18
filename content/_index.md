@@ -1,5 +1,5 @@
 ---
-title: Home
+title: "Home"
 draft: false
 ---
 
@@ -8,6 +8,6 @@ draft: false
 
 ![Topography](/images/topography.svg)
 
-Leveraging multi-disciplinary expertise, MOJO excels in merging design, technology, and business strategy to develop innovative digital products that meet diverse needs and challenge market conventions.
+Leveraging multi-disciplinary expertise, MOJO excels in merging user-centered design, cutting-edge technology, and strategic vision to develop innovative digital products that meet diverse needs and challenge market conventions.
 
 [Contact us](/contact) today to start building your next great product.

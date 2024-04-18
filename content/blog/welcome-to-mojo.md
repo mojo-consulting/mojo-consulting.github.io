@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to MOJO'
+title: "Welcome to MOJO"
 date: 2024-03-01T00:00:00+0000
 draft: false
 ---

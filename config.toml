@@ -8,16 +8,16 @@ theme = 'blank'
 
 [menu]
 [[menu.main]]
-  identifier = 'contact'
-  name = 'Contact'
-  title = 'Contact'
-  url = '/contact/'
+  identifier = 'services'
+  name = 'Services'
+  title = 'Services'
+  url = '/services/'
   weight = 1
 [[menu.main]]
-  identifier = 'blog'
-  name = 'Blog'
-  title = 'Blog'
-  url = '/blog/'
+  identifier = 'projects'
+  name = 'Projects'
+  title = 'Projects'
+  url = '/projects/'
   weight = 2
 [[menu.main]]
   identifier = 'about'
@@ -26,11 +26,17 @@ theme = 'blank'
   url = '/about/'
   weight = 3
 [[menu.main]]
-  identifier = 'services'
-  name = 'Services'
-  title = 'Services'
-  url = '/services/'
+  identifier = 'blog'
+  name = 'Blog'
+  title = 'Blog'
+  url = '/blog/'
   weight = 4
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact'
+  title = 'Contact'
+  url = '/contact/'
+  weight = 5
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,6 @@
+<ul class="tags">
+    {{ $items := split (.Get 0) "," }}
+    {{ range $items }}
+    <li>{{ trim . " " }}</li>
+    {{ end }}
+</ul>
